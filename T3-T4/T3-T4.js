@@ -92,7 +92,8 @@ i l'ús de blocs then() a JavaScript:
 
 //1 modifyPageNumberInput
     function modifyPageNumberInput(){
-        //Put your code here
+        let pageNumberInput = document.getElementById("pageNumber")
+		pageNumberInput.addEventListener("change", () => {fetchSWAPIPepople(pageNumberInput.value)})
     }
 
     //2 fetchSWAPIPeople
